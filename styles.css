@@ -22,6 +22,7 @@ nav a {
 
 nav img {
     max-width: 25rem;
+    width: clamp(15rem, 40vw, 25rem);
 }
 
 main h1 {
@@ -46,6 +47,33 @@ main h1 {
     margin: 0 auto;
     overflow: scroll;
     height: 70vh;
+}
+
+@media (max-width: 80rem) {
+    #container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+}
+
+@media (max-width: 50rem) {
+    #container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        width: 100%;
+        background-color: #eef6f8;
+        padding: 0rem;
+        background: #fff;
+    }
+
+    .type-label {
+        margin-block: 0rem !important;
+    }
+}
+
+@media (max-width: 25rem) {
+    #container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .product {
