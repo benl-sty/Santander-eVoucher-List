@@ -32,8 +32,9 @@ main h1 {
     font-weight: 400;
 }
 
-main h1 {
+main h1 span {
     font-size: 1.2rem;
+    font-weight: 500;
 }
 
 #eCodesList {
